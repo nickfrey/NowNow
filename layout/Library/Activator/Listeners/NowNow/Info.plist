@@ -1,0 +1,5 @@
+{
+    title = "NowNow";
+    description = "Google Now voice search everywhere";
+    "compatible-modes" = ("springboard", "application", "lockscreen");
+}

@@ -1,0 +1,9 @@
+*.o
+._*
+.DS_Store
+*.deb
+*.dylib
+_
+obj
+.debmake
+.theos

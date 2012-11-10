@@ -1,0 +1,19 @@
+entry = {
+	cell = PSLinkCell;
+	icon = "NowNow.png";
+	label = "NowNow";
+};
+title = "NowNow";
+items = (
+	{
+		cell = PSLinkCell;
+		bundle = LibActivator;
+		isController = 1;
+		label = "Activation Methods";
+		activatorListener = "com.nickf.nownow";
+	},
+	{
+		cell = PSGroupCell;
+		footerText = "Copyright (c) Nick Frey (http://twitter.com/NickFrey)";
+	},
+);
