@@ -1,17 +1,8 @@
-@interface SBApplicationController
-+ (id)sharedInstance;
-- (id)applicationWithDisplayIdentifier:(NSString*)displayIdentifier;
-@end
-
-@interface SBUIController
-+ (id)sharedInstance;
-- (void)activateApplicationFromSwitcher:(id)app;
-@end
-
-@interface SpringBoard
+@interface SpringBoard : NSObject
 + (id)sharedApplication;
 - (BOOL)canOpenURL:(id)url;
 - (BOOL)openURL:(id)url;
+- (void)applicationOpenURL:(id)url publicURLsOnly:(BOOL)only animating:(BOOL)animating;
 @end
 
 @interface GMOSearchApplication : NSObject
@@ -19,6 +10,6 @@
 @end
 
 @interface GMOMainViewController : NSObject
-- (void)startVoiceSearch;
 - (void)enterVoiceMode;
+- (void)homeVoiceButtonPressed:(id)fp8;
 @end

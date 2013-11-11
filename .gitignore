@@ -2,7 +2,6 @@
 ._*
 .DS_Store
 *.deb
-*.dylib
 _
 obj
 .debmake
