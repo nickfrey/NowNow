@@ -49,7 +49,14 @@ static SpringBoard* springBoard = nil;
 	    if([mainViewController respondsToSelector:@selector(enterVoiceMode)]) {
 		[mainViewController enterVoiceMode];
 	    } else if([mainViewController respondsToSelector:@selector(homeVoiceButtonPressed:)]) {
-		[mainViewController homeVoiceButtonPressed:nil];
+		// As of 4.0.0, the app crashes when triggering voice search multiple times in a row.
+		// This will do for now..
+		@try {
+		   [mainViewController homeVoiceButtonPressed:nil];
+		}
+		@catch(NSException *e) {
+
+		}
 	    }
 	  }
 	  return YES;
