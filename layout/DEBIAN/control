@@ -1,7 +1,7 @@
 Package: com.nickf.nownow
 Name: NowNow
 Depends: mobilesubstrate, libactivator, preferenceloader
-Version: 1.2
+Version: 1.4
 Architecture: iphoneos-arm
 Description: Google Now voice search everywhere
 Maintainer: Nick Frey
